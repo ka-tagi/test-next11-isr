@@ -39,9 +39,7 @@ export const getStaticProps = async (context: GetStaticPropsContext<{ id: string
   const id = context.params!.id;
   let params: TGetArticleParam | null = null;
   if (isPreviewMode) {
-    params = {
-      draftKey: draftKey as string,
-    }
+    params = draftKey;
   }
 
   const post = await getArticle(id, params);
