@@ -1,5 +1,7 @@
 ## はじめに
 
+next11 での検証用リポジトリ
+
 ```bash
 npm run dev
 ```
