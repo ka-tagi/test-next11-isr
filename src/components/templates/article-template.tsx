@@ -1,11 +1,15 @@
 // components ------------------------------------------
 import Link from 'next/link';
+import Header from '@/components/oganisms/header';
 import { TdisplayArticleData } from '@/@types/article';
 
 // template --------------------------------------------
 const ArticleTemplate = ({ post }: { post: TdisplayArticleData }) => {
   return (
     <div>
+
+      <Header />
+      
       {post.isPreview && (
         <div>
           プレビューモードで閲覧中。
